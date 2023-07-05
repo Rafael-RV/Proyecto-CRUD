@@ -1,0 +1,57 @@
+body {
+    background: url(../imagenes/fondo.jpg)  ;
+    background-size: cover;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    font-size: 20px;
+    font-weight: 500;
+   margin: 5px;
+   color: rgb(3, 108, 255);
+ }
+
+ .logo{
+    display: flex;
+    flex-direction: column;
+ }
+
+ span{
+    font-size: 20px;
+ }
+
+ header h1{
+    color: rgb(3, 108, 255);
+ }
+
+#img-header{
+    width: 30%;
+}
+
+form{
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+#form-button{
+    background-color: rgb(62, 133, 219);
+    color: white;
+    width: 10%;
+    font-size: 18px;
+    
+}
