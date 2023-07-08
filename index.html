@@ -26,31 +26,29 @@
         </nav>
     </header>
 
-    <main>
+   <form onsubmit="eviarDatos()">
+<div>
+    <label>Nombre y Apellido</label>
+    <input id="input-nombre" type="text">
+</div>
 
-        <form>
-	<div class="Nombres">
-    <label   for="nombre">Nombre y Apellido</label>
-    <input   id="nombre" type="text" name="nombre">
-	</div>
+<div>
+    <label> Edad</label>
+    <input id="input-edad" type="number">
+</div>
 
-	<div class="edad">
-    <label   for="edad">Edad</label>
-    <input   id="edad"  type="text" name="edad" >
-	</div>
-	<div class="motvo">
-    <label   for="motivo">Motivo de la consulta</label>
-    <input " id="motivo"  type="text" name="motivo" >
-	</div>
+<div>
+    <label> Motivos de la consulta</label>
+    <input id="input-motivo" type="text">
+</div>
+<input type="submit" value="Agendar">
 
-   <button id="form-button" onclick="agregarDatos()">Agendar</button>
+   </form>
 
-    <div id="nuevoDato"></div>
+ <ul id="ul-form">
+    
 
-</form>
-</main>
-    <footer>
+ </ul>
 
-    </footer>
 </body>
 </html>

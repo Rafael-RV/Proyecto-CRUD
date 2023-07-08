@@ -1,11 +1,11 @@
-function agregarDatos() {
-    let nombre = document.querySelector('#nombre').value;
-    let apellido = document.querySelector('#apellido').value;
-    let edad = document.querySelector('#edad').value;
-  
-    const div = document.getElementById('nuevoDato');
-    const p = document.createElement('p');
-    p.textContent = "Nombre: " + nombre + ", Apellido: " + apellido + ", Edad: " + edad;
-    div.appendChild(p);
-  }
-  
+function eviarDatos() 
+let nombres = document.querySelector('#input-nombre').value 
+let edades = document.querySelector('#input-nombre').value 
+let motivos = document.querySelector('#input-motivo').value
+
+if ( nombres === '' || edades === '' || motivos === '' ) return ('FaltaN campos por llenar')
+
+const listaPacientes = document.querySelector('#ul-form')
+const li = document.createElement('li')
+li.textContent = nombres + ' ' + edades + ' ' + motivos
+listaPacientes.appendChild(li)
