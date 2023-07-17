@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,60 @@
     <link rel="stylesheet" href="assets/CSS/styles.css">
     <title>Psicoterapia</title>
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">
             <img id="img-header" src="assets/imagenes/descarga.png" alt="logo-psicologia">
-            
-        <span class="Nombre-empresa">Ps. Anubis Mendoza</span>
+
+            <span class="Nombre-empresa">Ps. Anubis Mendoza</span>
         </a>
 
         <h1>Consulta de Psicoterapia</h1>
 
         <nav>
             <ul class="incio">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre nosotros</a>
-            <a href="#">Contacto</a>
-        </ul>
+                <a href="#">Inicio</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Contacto</a>
+            </ul>
         </nav>
     </header>
 
-   <form onsubmit="eviarDatos(event)">
-<div>
-    <label>Nombre y Apellido</label>
-    <input id="input-nombre" type="text">
-</div>
+    <form onsubmit="addData(event)">
+        <div>
+            <label>Nombre y Apellido</label>
+            <input id="input-nombre" type="text">
+        </div>
 
-<div>
-    <label> Edad</label>
-    <input id="input-edad" type="number">
-</div>
+        <div>
+            <label> Edad</label>
+            <input id="input-edad" type="number">
+        </div>
 
-<div>
-    <label> Motivos de la consulta</label>
-    <input id="input-motivo" type="text">
-</div>
-<input type="submit" value="Agendar">
+        <div>
+            <label> Motivos de la consulta</label>
+            <input id="input-motivo" type="text">
+        </div>
+        <input type="submit" value="Agendar">
 
-   </form>
+    </form>
 
- <ul id="ul-form">
+  <table>
+    <thead>
+        <tr>
+            <th>Nombre y Apellido</th>
+            <th> Edad</th>
+            <th> Motivos de la consulta</th>
+        </tr>
+    </thead>
+    
+    <tbody></tbody>
+  
+</table>
 
-
- </ul>
-
+    
+    <script src="app.js"></script>
 </body>
+
 </html>
