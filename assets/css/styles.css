@@ -46,5 +46,52 @@ form{
     flex-direction: row;
     justify-content: space-around;
     font-size: 20px;
+    
 }
+
+#btn-enviar{
+    background-color: rgb(115, 163, 223);
+    color: black;
+}
+
+#edi-btn{
+    background-color: rgb(115, 163, 223);
+    color: black;
+}
+
+.btn-js{
+    background-color: rgb(115, 163, 223);
+    color: black;
+}
+
+/* Estilos para el contenedor de la tabla */
+#contenedor-tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  /* Estilos para la tabla */
+  table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  /* Estilos para los encabezados */
+  thead th {
+    padding: 5px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+  }
+  
+  /* Estilos para las celdas del cuerpo de la tabla */
+  tbody  {
+    padding: 5px; 
+    background-color: #f0f0f0;
+    border: 1px solid #ccc; 
+    
+  }
+  
+
 

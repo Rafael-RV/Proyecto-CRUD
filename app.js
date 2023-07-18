@@ -19,7 +19,17 @@ function showData() {
 
   let html = "";
   patientsList.forEach((patient, index) => {
-    html += `<td>${patient.NombresYApellidos} ${patient.Edad} ${patient.MotivosDeLaConsulta}<button onclick="deleteData(${index})">Eliminar</button><button onclick="editData(${index})">Editar</button></td>`;
+    html += 
+     // contenido que aparecerá en el HTML
+  `<tr>
+    <td> ${patient.NombresYApellidos} </td>
+    <td>${patient.Edad}</td>
+    <td> ${patient.MotivosDeLaConsulta}</td>
+    <td>
+      <button class = "btn-js" onclick="deleteData(${index})">Eliminar</button>
+      <button class = "btn-js" onclick="editData(${index})">Editar</button>
+    </td>
+   </tr>`;
   });
 
   document.querySelector('tbody').innerHTML = html;
@@ -58,9 +68,10 @@ function addData(event) {
 
 // Función para editar los datos de un paciente
 function editData(index) {
-  document.getElementById('add-btn').style.display = 'none';
-  document.getElementById('edit-btn').style.display = 'block';
 
+    document.querySelector('#btn-enviar').style.display = 'none';
+    document.getElementById('edit-btn').style.display = 'block';
+  
   let patientsList;
   if (localStorage.getItem("patientsList") === null) {
     patientsList = [];
@@ -78,13 +89,16 @@ function editData(index) {
     patientsList[index].MotivosDeLaConsulta = document.querySelector('#input-motivo').value;
 
     localStorage.setItem("patientsList", JSON.stringify(patientsList));
+
     showData();
     document.querySelector('#input-nombre').value = "";
     document.querySelector('#input-edad').value = "";
     document.querySelector('#input-motivo').value = "";
 
-    document.getElementById('add-btn').style.display = 'block';
+    document.querySelector('#btn-enviar').style.display = 'block';
     document.getElementById('edit-btn').style.display = 'none';
+  
+   
   }
 }
 

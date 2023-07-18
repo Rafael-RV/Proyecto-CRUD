@@ -43,22 +43,27 @@
             <label> Motivos de la consulta</label>
             <input id="input-motivo" type="text">
         </div>
-        <input type="submit" value="Agendar">
+        <button id="btn-enviar" type="submit">Agendar</button>
+        <button id="edit-btn" type="button" style="display: none;">Actualizar</button>
 
     </form>
 
+    <div id="contenedor-tabla">
   <table>
     <thead>
         <tr>
             <th>Nombre y Apellido</th>
             <th> Edad</th>
             <th> Motivos de la consulta</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     
     <tbody></tbody>
+    
   
 </table>
+    </div>
 
     
     <script src="app.js"></script>
