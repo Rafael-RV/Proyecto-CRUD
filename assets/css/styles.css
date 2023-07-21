@@ -92,6 +92,10 @@ form{
     border: 1px solid #ccc; 
     
   }
-  
+  @media (max-width:680px){
+    body{
+        background-color: black;
+    }
+  }
 
 
