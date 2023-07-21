@@ -1,1 +1,1 @@
-El siguiente CRUD es un formulario para guardar informacion respecto a una una consulta con la psicologa.
+El siguiente CRUD es un formulario para guardar informacion al momento de agendar una consulta con la psicologa.
