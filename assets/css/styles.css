@@ -112,14 +112,17 @@ footer {
   margin-top: 5%;
   width: 100%;
   justify-content: center;
+  color:rgb(3, 108, 255);
 }
 
-/* Estilos para la navegación cuando la pantalla es menor a 850px */
-@media (max-width: 850px) {
+/* Estilos para la navegación cuando la pantalla es menor a 600px */
+@media (max-width: 600px) {
   
   footer{
     display: flex;
+    justify-content: center;
     flex-direction: column;
+     
   }
 
 }
