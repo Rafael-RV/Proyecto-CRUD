@@ -117,5 +117,9 @@ footer {
 /* Estilos para la navegación cuando la pantalla es menor a 850px */
 @media (max-width: 850px) {
   
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
 
 }
