@@ -7,7 +7,7 @@ class Paciente {
   }
 }
 
- // Funcion para mostrar los pacientes en la lista
+// Funcion para mostrar los pacientes en la lista
 function showData() {
   let patientsList;
 
@@ -19,9 +19,9 @@ function showData() {
 
   let html = "";
   patientsList.forEach((patient, index) => {
-    html += 
-     // contenido que aparecerá en el HTML
-  `<tr>
+    html +=
+      // contenido que aparecerá en el HTML
+      `<tr>
     <td> ${patient.NombresYApellidos} </td>
     <td>${patient.Edad}</td>
     <td> ${patient.MotivosDeLaConsulta}</td>
@@ -69,9 +69,9 @@ function addData(event) {
 // Función para editar los datos de un paciente
 function editData(index) {
 
-    document.querySelector('#btn-enviar').style.display = 'none';
-    document.getElementById('edit-btn').style.display = 'block';
-  
+  document.querySelector('#btn-enviar').style.display = 'none';
+  document.getElementById('edit-btn').style.display = 'block';
+
   let patientsList;
   if (localStorage.getItem("patientsList") === null) {
     patientsList = [];
@@ -97,8 +97,8 @@ function editData(index) {
 
     document.querySelector('#btn-enviar').style.display = 'block';
     document.getElementById('edit-btn').style.display = 'none';
-  
-   
+
+
   }
 }
 
